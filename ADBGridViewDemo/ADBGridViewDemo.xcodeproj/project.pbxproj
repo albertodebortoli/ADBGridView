@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D31E936F150018C900476E9E /* ADBGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D31E9369150018C900476E9E /* ADBGridView.m */; };
+		D31E9370150018C900476E9E /* ADBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D31E936A150018C900476E9E /* ADBImageView.m */; };
+		D31E9371150018C900476E9E /* ADBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D31E936B150018C900476E9E /* ADBTableViewCell.m */; };
+		D324AA2014E6F8B900BAA90C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D324AA1F14E6F8B900BAA90C /* SystemConfiguration.framework */; };
+		D33EAEB41500231F0040B72A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D33EAEB31500231F0040B72A /* README.md */; };
+		D34B14FD14CC2AAD00176C45 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34B14FC14CC2AAD00176C45 /* MessageUI.framework */; };
+		D3AF094914CAF7BF009A2ABD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AF094814CAF7BF009A2ABD /* UIKit.framework */; };
+		D3AF094B14CAF7BF009A2ABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AF094A14CAF7BF009A2ABD /* Foundation.framework */; };
+		D3AF094D14CAF7BF009A2ABD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AF094C14CAF7BF009A2ABD /* CoreGraphics.framework */; };
+		D3AF095314CAF7BF009A2ABD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3AF095114CAF7BF009A2ABD /* InfoPlist.strings */; };
+		D3AF09D114CAFA6C009A2ABD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AF09D014CAFA6C009A2ABD /* QuartzCore.framework */; };
+		D3DD4AB614E8348B00C4546A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DD4A9114E8348B00C4546A /* AppDelegate.m */; };
+		D3DD4ABA14E8348B00C4546A /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DD4A9314E8348B00C4546A /* BrowseViewController.m */; };
+		D3DD4AD014E8348B00C4546A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DD4A9E14E8348B00C4546A /* main.m */; };
+		D3DD4B6B14E8354C00C4546A /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3DD4B6A14E8354C00C4546A /* BrowseViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D31E9369150018C900476E9E /* ADBGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADBGridView.m; path = ../ADBGridView.m; sourceTree = "<group>"; };
+		D31E936A150018C900476E9E /* ADBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADBImageView.m; path = ../ADBImageView.m; sourceTree = "<group>"; };
+		D31E936B150018C900476E9E /* ADBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADBTableViewCell.m; path = ../ADBTableViewCell.m; sourceTree = "<group>"; };
+		D31E936C150018C900476E9E /* ADBGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBGridView.h; path = ../ADBGridView.h; sourceTree = "<group>"; };
+		D31E936D150018C900476E9E /* ADBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBImageView.h; path = ../ADBImageView.h; sourceTree = "<group>"; };
+		D31E936E150018C900476E9E /* ADBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBTableViewCell.h; path = ../ADBTableViewCell.h; sourceTree = "<group>"; };
+		D3221DFB150002BF009E0958 /* ADBGridViewDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ADBGridViewDemo-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D324AA1F14E6F8B900BAA90C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D33EAEB31500231F0040B72A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D34B14FC14CC2AAD00176C45 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D3AF094414CAF7BF009A2ABD /* ADBGridViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADBGridViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3AF094814CAF7BF009A2ABD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3AF094A14CAF7BF009A2ABD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3AF094C14CAF7BF009A2ABD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3AF09D014CAFA6C009A2ABD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D3DD4A9114E8348B00C4546A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		D3DD4A9314E8348B00C4546A /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = SOURCE_ROOT; };
+		D3DD4A9E14E8348B00C4546A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		D3DD4AA414E8348B00C4546A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		D3DD4AA714E8348B00C4546A /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = SOURCE_ROOT; };
+		D3DD4B6A14E8354C00C4546A /* BrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseViewController.xib; sourceTree = SOURCE_ROOT; };
+		D3E42D0B15001595008AB277 /* ADBGridView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADBGridView-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3AF094114CAF7BF009A2ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D324AA2014E6F8B900BAA90C /* SystemConfiguration.framework in Frameworks */,
+				D34B14FD14CC2AAD00176C45 /* MessageUI.framework in Frameworks */,
+				D3AF09D114CAFA6C009A2ABD /* QuartzCore.framework in Frameworks */,
+				D3AF094914CAF7BF009A2ABD /* UIKit.framework in Frameworks */,
+				D3AF094B14CAF7BF009A2ABD /* Foundation.framework in Frameworks */,
+				D3AF094D14CAF7BF009A2ABD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D31E93721500197200476E9E /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				D31E936C150018C900476E9E /* ADBGridView.h */,
+				D31E9369150018C900476E9E /* ADBGridView.m */,
+				D31E936E150018C900476E9E /* ADBTableViewCell.h */,
+				D31E936B150018C900476E9E /* ADBTableViewCell.m */,
+				D31E936D150018C900476E9E /* ADBImageView.h */,
+				D31E936A150018C900476E9E /* ADBImageView.m */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		D3AF093914CAF7BF009A2ABD = {
+			isa = PBXGroup;
+			children = (
+				D33EAEB31500231F0040B72A /* README.md */,
+				D31E93721500197200476E9E /* Src */,
+				D3AF094E14CAF7BF009A2ABD /* ADBGridViewDemo */,
+				D3AF094714CAF7BF009A2ABD /* Frameworks */,
+				D3AF094514CAF7BF009A2ABD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3AF094514CAF7BF009A2ABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3AF094414CAF7BF009A2ABD /* ADBGridViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3AF094714CAF7BF009A2ABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D324AA1F14E6F8B900BAA90C /* SystemConfiguration.framework */,
+				D34B14FC14CC2AAD00176C45 /* MessageUI.framework */,
+				D3AF09D014CAFA6C009A2ABD /* QuartzCore.framework */,
+				D3AF094814CAF7BF009A2ABD /* UIKit.framework */,
+				D3AF094A14CAF7BF009A2ABD /* Foundation.framework */,
+				D3AF094C14CAF7BF009A2ABD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3AF094E14CAF7BF009A2ABD /* ADBGridViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D3DD4AA714E8348B00C4546A /* BrowseViewController.h */,
+				D3DD4A9314E8348B00C4546A /* BrowseViewController.m */,
+				D3DD4B6A14E8354C00C4546A /* BrowseViewController.xib */,
+				D3AF094F14CAF7BF009A2ABD /* Supporting Files */,
+				D3DD4AA414E8348B00C4546A /* AppDelegate.h */,
+				D3DD4A9114E8348B00C4546A /* AppDelegate.m */,
+			);
+			name = ADBGridViewDemo;
+			path = MyFaceWhen;
+			sourceTree = "<group>";
+		};
+		D3AF094F14CAF7BF009A2ABD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3221DFB150002BF009E0958 /* ADBGridViewDemo-Info.plist */,
+				D3E42D0B15001595008AB277 /* ADBGridView-Prefix.pch */,
+				D3DD4A9E14E8348B00C4546A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3AF094314CAF7BF009A2ABD /* ADBGridViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3AF097014CAF7BF009A2ABD /* Build configuration list for PBXNativeTarget "ADBGridViewDemo" */;
+			buildPhases = (
+				D3AF094014CAF7BF009A2ABD /* Sources */,
+				D3AF094114CAF7BF009A2ABD /* Frameworks */,
+				D3AF094214CAF7BF009A2ABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADBGridViewDemo;
+			productName = MyFaceWhen;
+			productReference = D3AF094414CAF7BF009A2ABD /* ADBGridViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3AF093B14CAF7BF009A2ABD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "H-umus";
+			};
+			buildConfigurationList = D3AF093E14CAF7BF009A2ABD /* Build configuration list for PBXProject "ADBGridViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D3AF093914CAF7BF009A2ABD;
+			productRefGroup = D3AF094514CAF7BF009A2ABD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3AF094314CAF7BF009A2ABD /* ADBGridViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3AF094214CAF7BF009A2ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3AF095314CAF7BF009A2ABD /* InfoPlist.strings in Resources */,
+				D3DD4B6B14E8354C00C4546A /* BrowseViewController.xib in Resources */,
+				D33EAEB41500231F0040B72A /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3AF094014CAF7BF009A2ABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DD4AB614E8348B00C4546A /* AppDelegate.m in Sources */,
+				D3DD4ABA14E8348B00C4546A /* BrowseViewController.m in Sources */,
+				D3DD4AD014E8348B00C4546A /* main.m in Sources */,
+				D31E936F150018C900476E9E /* ADBGridView.m in Sources */,
+				D31E9370150018C900476E9E /* ADBImageView.m in Sources */,
+				D31E9371150018C900476E9E /* ADBTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3AF095114CAF7BF009A2ABD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+			);
+			name = InfoPlist.strings;
+			path = /Users/alberto/Repositories/iWasLike/MyFaceWhen;
+			sourceTree = "<absolute>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3A2D46A14E6FB2F00B4014B /* AdHoc_Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alberto De Bortoli";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_$(CONFIGURATION)";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "AD08571C-E136-4CB9-AD49-A6F7B6144845";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc_Distribution;
+		};
+		D3A2D46B14E6FB2F00B4014B /* AdHoc_Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CURRENT_PROJECT_VERSION = 1.0;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADBGridView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_$(CONFIGURATION)";
+				INFOPLIST_FILE = "ADBGridViewDemo-Info.plist";
+				PRODUCT_NAME = ADBGridViewDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc_Distribution;
+		};
+		D3AF096E14CAF7BF009A2ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alberto De Bortoli (H348E8ZLY2)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_$(CONFIGURATION)";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PROVISIONING_PROFILE = "6EC2548E-0A25-4BA5-8F8D-19D4A1BFD8E6";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D3AF096F14CAF7BF009A2ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alberto De Bortoli";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_$(CONFIGURATION)";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "AD08571C-E136-4CB9-AD49-A6F7B6144845";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3AF097114CAF7BF009A2ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CURRENT_PROJECT_VERSION = 1.0;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADBGridView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_$(CONFIGURATION)";
+				INFOPLIST_FILE = "ADBGridViewDemo-Info.plist";
+				PRODUCT_NAME = ADBGridViewDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3AF097214CAF7BF009A2ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CURRENT_PROJECT_VERSION = 1.0;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADBGridView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_$(CONFIGURATION)";
+				INFOPLIST_FILE = "ADBGridViewDemo-Info.plist";
+				PRODUCT_NAME = ADBGridViewDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3AF093E14CAF7BF009A2ABD /* Build configuration list for PBXProject "ADBGridViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3AF096E14CAF7BF009A2ABD /* Debug */,
+				D3AF096F14CAF7BF009A2ABD /* Release */,
+				D3A2D46A14E6FB2F00B4014B /* AdHoc_Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3AF097014CAF7BF009A2ABD /* Build configuration list for PBXNativeTarget "ADBGridViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3AF097114CAF7BF009A2ABD /* Debug */,
+				D3AF097214CAF7BF009A2ABD /* Release */,
+				D3A2D46B14E6FB2F00B4014B /* AdHoc_Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3AF093B14CAF7BF009A2ABD /* Project object */;
+}
