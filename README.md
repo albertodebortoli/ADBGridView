@@ -25,8 +25,8 @@ Simple usage:
 - (void)imageInADBGridView:(ADBGridView *)gridView longPressImageView:(ADBImageView *)imageView { ... }
 ```
 
-![1](http://www.albertodebortoli.it/GitHub/ADBGridView/ss1.png)
-![2](http://www.albertodebortoli.it/GitHub/ADBGridView/ss2.png)
+![1](http://www.albertodebortoli.it/GitHub/ADBGridView/SS1.png)
+![2](http://www.albertodebortoli.it/GitHub/ADBGridView/SS2.png)
 
 # License
 
@@ -49,7 +49,7 @@ modification, are permitted provided that the following conditions are met:
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY
+DISCLAIMED. IN NO EVENT SHALL Alberto De Bortoli BE LIABLE FOR ANY
 DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
 (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
 LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
