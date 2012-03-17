@@ -86,9 +86,11 @@
 - (NSUInteger)numberOfImagesForRow:(ADBGridView *)view
 {
     if (view == gridView1) {
-        return 7;
-    } else if (view == gridView2) {
         return 3;
+    } else if (view == gridView2) {
+        return 8;
+    } else if (view == gridView3) {
+        return 7;
     }
     
     return 0;
@@ -114,6 +116,15 @@
                                           cancelButtonTitle:nil
                                           otherButtonTitles:@"Ok", nil];
     [alert show];
+}
+
+#pragma mark - Actions
+
+- (IBAction)reloadGrids:(id)sender
+{
+    [gridView1 reloadData];
+    [gridView2 reloadData];
+    [gridView3 reloadData];
 }
 
 @end

@@ -24,9 +24,11 @@
 @interface ADBGridView : UITableView <UITableViewDelegate, UITableViewDataSource, ADBTableViewCellDelegate> {
     NSUInteger  imagesCount;
     NSUInteger  imagesForRowCount;
+    BOOL _caching;
     id <ADBGridViewDelegate> __unsafe_unretained _gridDelegate;
 }
 
 @property (nonatomic, unsafe_unretained) IBOutlet id <ADBGridViewDelegate> gridDelegate;
+@property (nonatomic, unsafe_unretained) BOOL caching;
 
 @end

@@ -12,7 +12,8 @@
 
 @implementation ADBTableViewCell
 
-@synthesize delegate;
+@synthesize delegate = _delegate;
+@synthesize caching = _caching;
 
 - (id)initWithStyle:(UITableViewCellStyle)style
     reuseIdentifier:(NSString *)reuseIdentifier;
@@ -38,6 +39,7 @@
     
     for (int i = 0; i < [images count]; i++) {
         ADBImageView *image = [[ADBImageView alloc] initWithFrame:CGRectMake(size * i, 0, size, size)];
+        image.caching = _caching;
         
         NSURL *path = [NSURL URLWithString:[images objectAtIndex:i]];
         [image setImageWithURL:path placeholderImage:[UIImage imageNamed:@""]];
@@ -65,8 +67,8 @@
 - (void)singleTap:(UIGestureRecognizer *)recognizer
 {
     ADBImageView *view = (ADBImageView *)recognizer.view;
-    if ([delegate respondsToSelector:@selector(ADBTableViewCell:didSingleTapView:)]) {
-        [delegate ADBTableViewCell:self didSingleTapView:view];
+    if ([_delegate respondsToSelector:@selector(ADBTableViewCell:didSingleTapView:)]) {
+        [_delegate ADBTableViewCell:self didSingleTapView:view];
     }
 }
 
@@ -74,8 +76,8 @@
 {
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         ADBImageView *view = (ADBImageView *)recognizer.view;
-        if ([delegate respondsToSelector:@selector(ADBTableViewCell:didLongPressView:)]) {
-            [delegate ADBTableViewCell:self didLongPressView:view];
+        if ([_delegate respondsToSelector:@selector(ADBTableViewCell:didLongPressView:)]) {
+            [_delegate ADBTableViewCell:self didLongPressView:view];
         }
     }
 }

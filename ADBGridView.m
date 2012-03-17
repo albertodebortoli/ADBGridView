@@ -9,17 +9,23 @@
 #import "ADBGridView.h"
 #import "ADBTableViewCell.h"
 
+@interface ADBGridView (Private)
+- (void)customInit;
+@end
+
 @implementation ADBGridView
 
 @synthesize gridDelegate = _gridDelegate;
+@synthesize caching = _caching;
 
 #pragma mark - Table view data source
 
 - (id)initWithFrame:(CGRect)frame
 {
-    if ((self = [super initWithFrame:frame])) {
-		self.delegate = self;
-        self.dataSource = self;
+    self = [super initWithFrame:frame];
+    
+    if (self) {
+        [self customInit];
     }
     
     return self;
@@ -27,11 +33,22 @@
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
-	if ((self = [super initWithCoder:(NSCoder *)aDecoder])) {
-		self.delegate = self;
-        self.dataSource = self;
-	}
+	self = [super initWithCoder:(NSCoder *)aDecoder];
+    
+    if (self) {
+        [self customInit];
+    }
+    
     return self;
+}
+
+- (void)customInit
+{
+    self.delegate = self;
+    self.dataSource = self;
+    self.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.caching = YES;
+    self.backgroundColor = [UIColor blackColor];
 }
 
 - (void)reloadData
@@ -73,6 +90,7 @@
         cell.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     }
     
+    cell.caching = _caching;
     cell.delegate = self;
     [cell setImagePaths:pathsForCell targetForGestures:self];
     
@@ -99,7 +117,6 @@
 
 - (CGFloat)tableView:(UITableView *)aTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%f", self.frame.size.width);
     return self.frame.size.width / (float)imagesForRowCount;
 }
 

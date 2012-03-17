@@ -14,8 +14,11 @@
     
     IBOutlet ADBGridView                *gridView1;
     IBOutlet ADBGridView                *gridView2;
+    IBOutlet ADBGridView                *gridView3;
     NSMutableArray                      *images;
 }
+
+- (IBAction)reloadGrids:(id)sender;
 
 @property (nonatomic, strong) NSMutableArray *images;
 

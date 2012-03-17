@@ -145,8 +145,7 @@ static NSTimeInterval cachingTime = 604800.0; // 7 days caching as default
     self.image = imageData;
     _placeholder.hidden = YES;
     
-    if (self.caching)
-    {
+    if (self.caching) {
         NSFileManager *fileManager = [NSFileManager defaultManager];
         
         if (![fileManager fileExistsAtPath:[ADBImageView cacheDirectoryAddress]]) {
@@ -262,8 +261,9 @@ static NSTimeInterval cachingTime = 604800.0; // 7 days caching as default
         }
     }
     
-    _activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    _activityIndicator.frame = self.bounds;
+    _activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    CGPoint center = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
+    _activityIndicator.center = center;
     [self addSubview:_activityIndicator];
     [_activityIndicator startAnimating];
     

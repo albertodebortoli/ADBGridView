@@ -20,11 +20,13 @@
 @interface ADBTableViewCell : UITableViewCell {
     
     NSMutableArray *_imageSubviews;
-    id <ADBTableViewCellDelegate> __unsafe_unretained delegate;
+    BOOL _caching;
+    id <ADBTableViewCellDelegate> __unsafe_unretained _delegate;
 }
 
 - (void)setImagePaths:(NSArray *)images targetForGestures:(id)target;
 
 @property (nonatomic, unsafe_unretained) id <ADBTableViewCellDelegate> delegate;
+@property (nonatomic, unsafe_unretained) BOOL caching;
 
 @end
