@@ -65,7 +65,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSUInteger retVal = ceil(imagesCount / imagesForRowCount);
+    NSUInteger retVal = ceilf((float)imagesCount / (float)imagesForRowCount);
     return retVal;
 }
 
@@ -92,6 +92,11 @@
     
     cell.caching = _caching;
     cell.delegate = self;
+    
+    while ([pathsForCell count] < [_gridDelegate numberOfImagesForRow:self]) {
+        [pathsForCell addObject:@""];
+    }
+    
     [cell setImagePaths:pathsForCell targetForGestures:self];
     
     return cell;

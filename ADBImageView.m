@@ -234,6 +234,10 @@ static NSTimeInterval cachingTime = 604800.0; // 7 days caching as default
     self.image = nil;
     _placeholder.hidden = NO;
     
+    if ([[_url absoluteString] isEqualToString:@""]) {
+        return;
+    }
+    
     if (self.caching) {
         NSFileManager *fileManager = [NSFileManager defaultManager];
         _cachePath = [[ADBImageView cacheDirectoryAddress] stringByAppendingPathComponent:[self cachedImageSystemName]];
